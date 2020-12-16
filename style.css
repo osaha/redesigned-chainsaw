@@ -6,9 +6,14 @@
 
 body {
   font-family: "M PLUS 1p", sans-serif;
-  width: 90%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1080px;
   margin: auto;
-  background-color: #F5F5F5;
+  color: #3b3b44;
+  /* background-color: lightgreen; */
 }
 
 header {
@@ -17,7 +22,9 @@ header {
   align-items: center;
 }
 
-.logo-container, .nav-links, .cart {
+.logo-container,
+.nav-links,
+.cart {
   display: flex;
 }
 
@@ -41,7 +48,6 @@ nav {
 }
 
 .nav-link {
-  color: #5f5f79;
   text-decoration: none;
 }
 .cart {
@@ -49,7 +55,8 @@ nav {
   justify-content: flex-end;
 }
 
-.subtitle, .comment {
+.subtitle,
+.comment {
   margin: 2rem 0px 0px;
 }
 
@@ -62,9 +69,28 @@ nav {
 }
 
 .comment::before {
-  content:"◆";
+  content: "◆";
 }
 
 .backlink {
-  margin:50px;
+  margin: 50px;
+}
+
+@media (max-width: 1079px){
+  .shot img {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    font-size: 1em;
+    width: 90%;
+    margin: auto;
+    /* background-color: lightyellow; */
+  }
+  .shot img {
+    width: 100%;
+  }
 }
