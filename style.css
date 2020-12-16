@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+  width: 90%;
+  margin: auto;
+  background-color: #F5F5F5;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+
+.logo-container, .nav-links, .cart {
+  display: flex;
+}
+
+.logo {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.logo-container {
+  flex: 1;
+  align-items: center;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #5f5f79;
+  text-decoration: none;
+}
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.subtitle, .comment {
+  margin: 2rem 0px 0px;
+}
+
+.item-lists {
+  margin-left: 40px;
+}
+
+.shot img {
+  width: 800px;
+}
+
+.comment::before {
+  content:"◆";
+}
+
+.backlink {
+  margin:50px;
+}
